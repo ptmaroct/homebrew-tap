@@ -5,21 +5,21 @@
 class Lfg < Formula
   desc "TUI bootstrap CLI for new dev machines"
   homepage "https://github.com/ptmaroct/lfg"
-  version "0.3.2"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ptmaroct/lfg/releases/download/v0.3.2/lfg_0.3.2_darwin_amd64.tar.gz"
-      sha256 "d32fa67f35ca4281a3afac0f3b8f1b2ed7f409d86fe441b3a91cc801b3d28e28"
+      url "https://github.com/ptmaroct/lfg/releases/download/v0.4.0/lfg_0.4.0_darwin_amd64.tar.gz"
+      sha256 "d2a5a9f967266478f244daf8f40bc7925c32e9d984b8f0b3081958a9cb703627"
 
       define_method(:install) do
         bin.install "lfg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ptmaroct/lfg/releases/download/v0.3.2/lfg_0.3.2_darwin_arm64.tar.gz"
-      sha256 "c6d8114fd022136ec54a5c1f4f60d5dad0749d1773aa7c450212d727b62576b6"
+      url "https://github.com/ptmaroct/lfg/releases/download/v0.4.0/lfg_0.4.0_darwin_arm64.tar.gz"
+      sha256 "8298169a40024e22a464b54c7e82e83de190d3a46060b1d0e1c04d9a0eb4e6ff"
 
       define_method(:install) do
         bin.install "lfg"
@@ -29,15 +29,15 @@ class Lfg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ptmaroct/lfg/releases/download/v0.3.2/lfg_0.3.2_linux_amd64.tar.gz"
-      sha256 "2d097bb6c7027d54b57c8df7d553885cafd2ad26c2bed0bedc0afffd0f9aac92"
+      url "https://github.com/ptmaroct/lfg/releases/download/v0.4.0/lfg_0.4.0_linux_amd64.tar.gz"
+      sha256 "fba9396d70f9e1b5a8f52150e1564063268f8756502b864ddb8f2cbc57d0af0d"
       define_method(:install) do
         bin.install "lfg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ptmaroct/lfg/releases/download/v0.3.2/lfg_0.3.2_linux_arm64.tar.gz"
-      sha256 "7869b4ea9e07e8cad64a560f7ec68d209f7b4e2c48356a5fe94543c4d4a336f3"
+      url "https://github.com/ptmaroct/lfg/releases/download/v0.4.0/lfg_0.4.0_linux_arm64.tar.gz"
+      sha256 "66fa2d0a1a968f64d7f3595b326ab4f62bdd676b3adcfdf25d2cfe0a2bd64645"
       define_method(:install) do
         bin.install "lfg"
       end
