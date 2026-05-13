@@ -5,21 +5,21 @@
 class LfgBeta < Formula
   desc "TUI bootstrap CLI for new dev machines (beta channel)"
   homepage "https://github.com/ptmaroct/lfg"
-  version "0.4.0-beta.2"
+  version "0.4.1-beta.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ptmaroct/lfg/releases/download/v0.4.0-beta.2/lfg_0.4.0-beta.2_darwin_amd64.tar.gz"
-      sha256 "151218ce0e6d1d0627fd513c93ce74e12f8086944d0aadce97b04554ff702c75"
+      url "https://github.com/ptmaroct/lfg/releases/download/v0.4.1-beta.0/lfg_0.4.1-beta.0_darwin_amd64.tar.gz"
+      sha256 "fa356e1d749624ea8528965c57799af658bba0194df5ffcfba2c6f2392d05e05"
 
       define_method(:install) do
         bin.install "lfg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ptmaroct/lfg/releases/download/v0.4.0-beta.2/lfg_0.4.0-beta.2_darwin_arm64.tar.gz"
-      sha256 "88ba293b30067d21ab724d3214b986b5f1bddee548a1123a7ebb81cfd1f05c34"
+      url "https://github.com/ptmaroct/lfg/releases/download/v0.4.1-beta.0/lfg_0.4.1-beta.0_darwin_arm64.tar.gz"
+      sha256 "9271898e684a15b6c2f334a9bcb8fd614f5abe2b897afda2d76719c3b93980cf"
 
       define_method(:install) do
         bin.install "lfg"
@@ -29,15 +29,15 @@ class LfgBeta < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ptmaroct/lfg/releases/download/v0.4.0-beta.2/lfg_0.4.0-beta.2_linux_amd64.tar.gz"
-      sha256 "25daac1b12aebed933fd5d8d827c6a51bf24ebcea8a87096fa86d92653d5b44c"
+      url "https://github.com/ptmaroct/lfg/releases/download/v0.4.1-beta.0/lfg_0.4.1-beta.0_linux_amd64.tar.gz"
+      sha256 "8274e67dd2334ea478f7d004bf8b1ad9cf90e457c8a2d18679441524d421516b"
       define_method(:install) do
         bin.install "lfg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ptmaroct/lfg/releases/download/v0.4.0-beta.2/lfg_0.4.0-beta.2_linux_arm64.tar.gz"
-      sha256 "ff5db49c6d54ce03e76a03001e3d2a61c65aaeed8f59ba29eb36fc3b4709ce02"
+      url "https://github.com/ptmaroct/lfg/releases/download/v0.4.1-beta.0/lfg_0.4.1-beta.0_linux_arm64.tar.gz"
+      sha256 "6f0128e87e7dfe5410c6a0785fe05f5586881feddbea10f90e3620302ad54ad0"
       define_method(:install) do
         bin.install "lfg"
       end
